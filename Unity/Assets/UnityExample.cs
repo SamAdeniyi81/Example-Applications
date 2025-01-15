@@ -19,8 +19,10 @@ using UnityEngine.Events;
 public class UnityExample : MonoBehaviour
 {
     //Paste key/license strings here
-    private string key = "";
-    private string license = "";
+    private string key = "MIIBKjCB4wYHKoZIzj0CATCB1wIBATAsBgcqhkjOPQEBAiEA/////wAAAAEAAAAAAAAAAAAAAAD///////////////8wWwQg/////wAAAAEAAAAAAAAAAAAAAAD///////////////wEIFrGNdiqOpPns+u9VXaYhrxlHQawzFOw9jvOPD4n0mBLAxUAxJ02CIbnBJNqZnjhE50mt4GffpAEIQNrF9Hy4SxCR/i85uVjpEDydwN9gS3rM6D0oTlF2JjClgIhAP////8AAAAA//////////+85vqtpxeehPO5ysL8YyVRAgEBA0IABMHYK1eXUlXPBZS+4FK97nSCNbLATmbSo7m8eQOjarFbcTBK5vZbJ4dEVMHX04v4cMFKMH1WSCopou8p4Ky4+7c=";
+
+    private string license = "<License>  <Id>8ce5e55e-e7bf-4d47-83b0-a073c231b2eb</Id>  <Type>Standard</Type>  <Quantity>10</Quantity>  <LicenseAttributes>    <Attribute name='Software'></Attribute>  </LicenseAttributes>  <ProductFeatures>    <Feature name='Sales'>True</Feature>    <Feature name='Billing'>False</Feature>  </ProductFeatures>  <Customer>    <Name>Jason Kang</Name>    <Email>kang0463@umn.edu</Email>  </Customer>  <Expiration>Tue, 07 Nov 2034 05:00:00 GMT</Expiration>  <Signature>MEUCIG2f4mCv9WWkxYrAi3jMnrpXUsGjozvNMYA4nEuD7IAeAiEAtuBa1HaDBiAsp8Nq3HfAvS4H8kpmt4h7hf9nwK/Vfl0=</Signature></License>";
+
 
 
     /// <summary>
