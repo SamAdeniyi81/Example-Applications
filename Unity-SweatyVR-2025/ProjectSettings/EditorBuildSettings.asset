@@ -8,8 +8,15 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Fitness Room/Scenes/Intrinsic Focus.unity
+    guid: 4442e6d58a309ef488d47189dd11ab8a
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 718a9c3657548f646ac946371215e351,
+      type: 2}
+    Unity.XR.OpenVR.Settings: {fileID: 11400000, guid: a65adba624f16c54c822d7bcfead0035,
+      type: 2}
+    com.unity.input.settings: {fileID: 11400000, guid: d581487f98f23b14da6a3820264581ee,
       type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 11bfde3b9caee6a4bb799e08a07ac534,
       type: 2}

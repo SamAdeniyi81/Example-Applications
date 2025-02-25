@@ -24,7 +24,7 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -80,7 +80,187 @@ ModelImporter:
   humanDescription:
     serializedVersion: 3
     human: []
-    skeleton: []
+    skeleton:
+    - name: Muscle_Rig(Clone)
+      parentName: 
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: zbrush_concat.osgb.cleaner.gles
+      parentName: Muscle_Rig(Clone)
+      position: {x: -0, y: 0, z: 1.1710918}
+      rotation: {x: -0.70710695, y: 0, z: -0, w: 0.7071066}
+      scale: {x: 0.027244989, y: 0.027244993, z: 0.027244993}
+    - name: Sketchfab_model
+      parentName: Muscle_Rig(Clone)
+      position: {x: -0, y: 0, z: 1.1710918}
+      rotation: {x: -0.7071069, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 0.027244989, y: 0.027244993, z: 0.027244993}
+    - name: Object_9
+      parentName: Muscle_Rig(Clone)
+      position: {x: -0, y: 0, z: 1.1710918}
+      rotation: {x: -0.70710707, y: 0, z: -0, w: 0.70710653}
+      scale: {x: 0.027244989, y: 0.027244993, z: 0.027244993}
+    - name: Object_7
+      parentName: Muscle_Rig(Clone)
+      position: {x: -0, y: 0, z: 1.1710918}
+      rotation: {x: -0.70710707, y: 0, z: -0, w: 0.70710653}
+      scale: {x: 0.027244989, y: 0.027244993, z: 0.027244993}
+    - name: Object_5
+      parentName: Muscle_Rig(Clone)
+      position: {x: -0, y: 0, z: 1.1710918}
+      rotation: {x: -0.70710707, y: 0, z: -0, w: 0.70710653}
+      scale: {x: 0.027244989, y: 0.027244993, z: 0.027244993}
+    - name: Object_33
+      parentName: Muscle_Rig(Clone)
+      position: {x: -0, y: 0, z: 1.1710918}
+      rotation: {x: -0.70710707, y: 0, z: -0, w: 0.70710653}
+      scale: {x: 0.027244989, y: 0.027244993, z: 0.027244993}
+    - name: Object_31
+      parentName: Muscle_Rig(Clone)
+      position: {x: -0, y: 0, z: 1.1710918}
+      rotation: {x: -0.70710707, y: 0, z: -0, w: 0.70710653}
+      scale: {x: 0.027244989, y: 0.027244993, z: 0.027244993}
+    - name: Object_3
+      parentName: Muscle_Rig(Clone)
+      position: {x: -0, y: 0, z: 1.1710918}
+      rotation: {x: -0.70710707, y: 0, z: -0, w: 0.70710653}
+      scale: {x: 0.027244989, y: 0.027244993, z: 0.027244993}
+    - name: Object_29
+      parentName: Muscle_Rig(Clone)
+      position: {x: -0, y: 0, z: 1.1710918}
+      rotation: {x: -0.70710707, y: 0, z: -0, w: 0.70710653}
+      scale: {x: 0.027244989, y: 0.027244993, z: 0.027244993}
+    - name: Object_27
+      parentName: Muscle_Rig(Clone)
+      position: {x: -0, y: 0, z: 1.1710918}
+      rotation: {x: -0.70710707, y: 0, z: -0, w: 0.70710653}
+      scale: {x: 0.027244989, y: 0.027244993, z: 0.027244993}
+    - name: Object_25
+      parentName: Muscle_Rig(Clone)
+      position: {x: -0, y: 0, z: 1.1710918}
+      rotation: {x: -0.70710707, y: 0, z: -0, w: 0.70710653}
+      scale: {x: 0.027244989, y: 0.027244993, z: 0.027244993}
+    - name: Object_23
+      parentName: Muscle_Rig(Clone)
+      position: {x: -0, y: 0, z: 1.1710918}
+      rotation: {x: -0.70710707, y: 0, z: -0, w: 0.70710653}
+      scale: {x: 0.027244989, y: 0.027244993, z: 0.027244993}
+    - name: Object_21
+      parentName: Muscle_Rig(Clone)
+      position: {x: -0, y: 0, z: 1.1710918}
+      rotation: {x: -0.70710707, y: 0, z: -0, w: 0.70710653}
+      scale: {x: 0.027244989, y: 0.027244993, z: 0.027244993}
+    - name: Object_19
+      parentName: Muscle_Rig(Clone)
+      position: {x: -0, y: 0, z: 1.1710918}
+      rotation: {x: -0.70710707, y: 0, z: -0, w: 0.70710653}
+      scale: {x: 0.027244989, y: 0.027244993, z: 0.027244993}
+    - name: Object_17
+      parentName: Muscle_Rig(Clone)
+      position: {x: -0, y: 0, z: 1.1710918}
+      rotation: {x: -0.70710707, y: 0, z: -0, w: 0.70710653}
+      scale: {x: 0.027244989, y: 0.027244993, z: 0.027244993}
+    - name: Object_15
+      parentName: Muscle_Rig(Clone)
+      position: {x: -0, y: 0, z: 1.1710918}
+      rotation: {x: -0.70710707, y: 0, z: -0, w: 0.70710653}
+      scale: {x: 0.027244989, y: 0.027244993, z: 0.027244993}
+    - name: Object_13
+      parentName: Muscle_Rig(Clone)
+      position: {x: -0, y: 0, z: 1.1710918}
+      rotation: {x: -0.70710707, y: 0, z: -0, w: 0.70710653}
+      scale: {x: 0.027244989, y: 0.027244993, z: 0.027244993}
+    - name: Object_11
+      parentName: Muscle_Rig(Clone)
+      position: {x: -0, y: 0, z: 1.1710918}
+      rotation: {x: -0.70710707, y: 0, z: -0, w: 0.70710653}
+      scale: {x: 0.027244989, y: 0.027244993, z: 0.027244993}
+    - name: Empty.002
+      parentName: Muscle_Rig(Clone)
+      position: {x: -0.21731065, y: -0.036611993, z: 1.2205249}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: /sketchfab-data/processing/6eab71859ab04438983aa54e0338d794/pre
+      parentName: Muscle_Rig(Clone)
+      position: {x: -0, y: 0, z: 1.1710918}
+      rotation: {x: -0.70710707, y: 0, z: -0, w: 0.70710653}
+      scale: {x: 0.027244989, y: 0.027244993, z: 0.027244993}
+    - name: /sketchfab-data/processing/6eab71859ab04438983aa54e0338d794.014
+      parentName: Muscle_Rig(Clone)
+      position: {x: -0, y: 0, z: 1.1710918}
+      rotation: {x: -0.70710707, y: 0, z: -0, w: 0.70710653}
+      scale: {x: 0.027244989, y: 0.027244993, z: 0.027244993}
+    - name: /sketchfab-data/processing/6eab71859ab04438983aa54e0338d794.013
+      parentName: Muscle_Rig(Clone)
+      position: {x: -0, y: 0, z: 1.1710918}
+      rotation: {x: -0.70710707, y: 0, z: -0, w: 0.70710653}
+      scale: {x: 0.027244989, y: 0.027244993, z: 0.027244993}
+    - name: /sketchfab-data/processing/6eab71859ab04438983aa54e0338d794.012
+      parentName: Muscle_Rig(Clone)
+      position: {x: -0, y: 0, z: 1.1710918}
+      rotation: {x: -0.70710707, y: 0, z: -0, w: 0.70710653}
+      scale: {x: 0.027244989, y: 0.027244993, z: 0.027244993}
+    - name: /sketchfab-data/processing/6eab71859ab04438983aa54e0338d794.011
+      parentName: Muscle_Rig(Clone)
+      position: {x: -0, y: 0, z: 1.1710918}
+      rotation: {x: -0.70710707, y: 0, z: -0, w: 0.70710653}
+      scale: {x: 0.027244989, y: 0.027244993, z: 0.027244993}
+    - name: /sketchfab-data/processing/6eab71859ab04438983aa54e0338d794.010
+      parentName: Muscle_Rig(Clone)
+      position: {x: -0, y: 0, z: 1.1710918}
+      rotation: {x: -0.70710707, y: 0, z: -0, w: 0.70710653}
+      scale: {x: 0.027244989, y: 0.027244993, z: 0.027244993}
+    - name: /sketchfab-data/processing/6eab71859ab04438983aa54e0338d794.009
+      parentName: Muscle_Rig(Clone)
+      position: {x: -0, y: 0, z: 1.1710918}
+      rotation: {x: -0.70710707, y: 0, z: -0, w: 0.70710653}
+      scale: {x: 0.027244989, y: 0.027244993, z: 0.027244993}
+    - name: /sketchfab-data/processing/6eab71859ab04438983aa54e0338d794.008
+      parentName: Muscle_Rig(Clone)
+      position: {x: -0, y: 0, z: 1.1710918}
+      rotation: {x: -0.70710707, y: 0, z: -0, w: 0.70710653}
+      scale: {x: 0.027244989, y: 0.027244993, z: 0.027244993}
+    - name: /sketchfab-data/processing/6eab71859ab04438983aa54e0338d794.007
+      parentName: Muscle_Rig(Clone)
+      position: {x: -0, y: 0, z: 1.1710918}
+      rotation: {x: -0.70710707, y: 0, z: -0, w: 0.70710653}
+      scale: {x: 0.027244989, y: 0.027244993, z: 0.027244993}
+    - name: /sketchfab-data/processing/6eab71859ab04438983aa54e0338d794.006
+      parentName: Muscle_Rig(Clone)
+      position: {x: -0, y: 0, z: 1.1710918}
+      rotation: {x: -0.70710707, y: 0, z: -0, w: 0.70710653}
+      scale: {x: 0.027244989, y: 0.027244993, z: 0.027244993}
+    - name: /sketchfab-data/processing/6eab71859ab04438983aa54e0338d794.005
+      parentName: Muscle_Rig(Clone)
+      position: {x: -0, y: 0, z: 1.1710918}
+      rotation: {x: -0.70710707, y: 0, z: -0, w: 0.70710653}
+      scale: {x: 0.027244989, y: 0.027244993, z: 0.027244993}
+    - name: /sketchfab-data/processing/6eab71859ab04438983aa54e0338d794.004
+      parentName: Muscle_Rig(Clone)
+      position: {x: -0, y: 0, z: 1.1710918}
+      rotation: {x: -0.70710707, y: 0, z: -0, w: 0.70710653}
+      scale: {x: 0.027244989, y: 0.027244993, z: 0.027244993}
+    - name: /sketchfab-data/processing/6eab71859ab04438983aa54e0338d794.003
+      parentName: Muscle_Rig(Clone)
+      position: {x: -0, y: 0, z: 1.1710918}
+      rotation: {x: -0.70710707, y: 0, z: -0, w: 0.70710653}
+      scale: {x: 0.027244989, y: 0.027244993, z: 0.027244993}
+    - name: /sketchfab-data/processing/6eab71859ab04438983aa54e0338d794.002
+      parentName: Muscle_Rig(Clone)
+      position: {x: -0, y: 0, z: 1.1710918}
+      rotation: {x: -0.70710707, y: 0, z: -0, w: 0.70710653}
+      scale: {x: 0.027244989, y: 0.027244993, z: 0.027244993}
+    - name: /sketchfab-data/processing/6eab71859ab04438983aa54e0338d794.001
+      parentName: Muscle_Rig(Clone)
+      position: {x: -0, y: 0, z: 1.1710918}
+      rotation: {x: -0.70710707, y: 0, z: -0, w: 0.70710653}
+      scale: {x: 0.027244989, y: 0.027244993, z: 0.027244993}
+    - name: /sketchfab-data/processing/6eab71859ab04438983aa54e0338d794
+      parentName: Muscle_Rig(Clone)
+      position: {x: -0, y: 0, z: 1.1710918}
+      rotation: {x: -0.70710707, y: 0, z: -0, w: 0.70710653}
+      scale: {x: 0.027244989, y: 0.027244993, z: 0.027244993}
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
@@ -91,13 +271,13 @@ ModelImporter:
     globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
-  animationType: 2
+  animationType: 3
   humanoidOversampling: 1
-  avatarSetup: 0
+  avatarSetup: 1
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
   remapMaterialsIfMaterialImportModeIsNone: 0
   additionalBone: 0

@@ -1,0 +1,16 @@
+{
+  "source": "Unity",
+  "applications": [
+    {
+      "app_key": "application.generated.unity.delsysapiunityexample.exe",
+      "launch_type": "url",
+      "url": "steam://launch/",
+      "action_manifest_path": "C:\\Users\\samad\\Downloads\\Example-Applications\\Unity-SweatyVR-2025\\Assets\\StreamingAssets\\SteamVR\\actions.json",
+      "strings": {
+        "en_us": {
+          "name": "DelsysAPI-UnityExample [Testing]"
+        }
+      }
+    }
+  ]
+}
