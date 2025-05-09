@@ -19,6 +19,9 @@ public class VRIKCalibrationUnity : MonoBehaviour
     public VRIKCalibrator.CalibrationData data = new VRIKCalibrator.CalibrationData();
 
     //private InputAction calibrateAction;
+    private Vector3 initialAvatarScale;
+    private Vector3 initialAvatarPosition;
+    private Quaternion initialAvatarRotation;
 
     public SteamVR_Action_Boolean primaryButtonAction;
 
@@ -27,6 +30,16 @@ public class VRIKCalibrationUnity : MonoBehaviour
         // Initialize Input Action
         //calibrateAction = new InputAction(type: InputActionType.Button, binding: "<ValveIndexController>{RightHand}/primaryButton");
         //calibrateAction.Enable();
+    }
+
+    void Start()
+    {
+        if (ik != null && ik.solver != null && ik.solver.spine.headTarget != null)
+        {
+            initialAvatarScale = ik.transform.localScale;
+            initialAvatarPosition = ik.transform.position;
+            initialAvatarRotation = ik.transform.rotation;
+        }
     }
 
     void OnDestroy()
@@ -45,19 +58,35 @@ public class VRIKCalibrationUnity : MonoBehaviour
 */
     void Update()
     {
+
         // Check if the calibration button is pressed
         if (primaryButtonAction.GetStateDown(SteamVR_Input_Sources.RightHand))
         {
             CalibrateAvatar();
             Debug.Log("Controller button press detected");
         }
+
+       
+            /*if (leftHandTracker != null)
+            {
+                Debug.DrawRay(leftHandTracker.position, leftHandTracker.forward * 0.2f, Color.blue); // Forward
+                Debug.DrawRay(leftHandTracker.position, leftHandTracker.up * 0.1f, Color.green); // Up
+           
+        }*/
     }
 
 
     private void CalibrateAvatar()
     {
+        // Reset avatar to original transform before applying calibration
+        ik.transform.localScale = initialAvatarScale;
+        ik.transform.position = initialAvatarPosition;
+        ik.transform.rotation = initialAvatarRotation;
+
         // Perform calibration and store calibration data
         data = VRIKCalibrator.Calibrate(ik, settings, headTracker, bodyTracker, leftHandTracker, rightHandTracker, leftFootTracker, rightFootTracker);
         Debug.Log("Calibration complete.");
+
+
     }
 }

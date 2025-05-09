@@ -9,24 +9,34 @@ public class BodyPartToggle : MonoBehaviour
     {
         public GameObject avatarMesh;  // Avatar's SkinnedMeshRenderer parent
         public GameObject anatomyMesh; // Anatomy MeshRenderer parent
+
+        [HideInInspector] public Material[] originalMaterials; // Cache original avatar materials
+
     }
 
     public BodyPart[] bodyParts;
+    public Material anatomyMaterial; // Material to use when anatomy is shown
+
 
     void Start()
     {
         // Turn off only the MeshRenderers of the anatomy meshes, keeping them active
         foreach (var part in bodyParts)
         {
+            var smr = part.avatarMesh.GetComponentInChildren<SkinnedMeshRenderer>();
+            if (smr != null)
+            {
+                part.originalMaterials = smr.materials;
+            }
+
+            // Disable anatomy renderers
             if (part.anatomyMesh != null)
             {
-                MeshRenderer[] renderers = part.anatomyMesh.GetComponentsInChildren<MeshRenderer>();
-                foreach (MeshRenderer renderer in renderers)
+                foreach (MeshRenderer renderer in part.anatomyMesh.GetComponentsInChildren<MeshRenderer>())
                 {
-                    renderer.enabled = false; // Hides the anatomy mesh
+                    renderer.enabled = false;
+                    //
                 }
-                //Debug.Log($"Disabled anatomy mesh renderers for {part.anatomyMesh.name}");
-
             }
         }
     }
@@ -39,15 +49,31 @@ public class BodyPartToggle : MonoBehaviour
             {
                 bool isShowingAnatomy = part.anatomyMesh.GetComponentInChildren<MeshRenderer>().enabled;
 
-                // Toggle only the MeshRenderers (so objects remain active)
+                // Toggle anatomy visibility
                 foreach (MeshRenderer renderer in part.anatomyMesh.GetComponentsInChildren<MeshRenderer>())
                 {
                     renderer.enabled = !isShowingAnatomy;
                 }
 
-                foreach (SkinnedMeshRenderer renderer in part.avatarMesh.GetComponentsInChildren<SkinnedMeshRenderer>())
+                // Change avatar material
+                var smr = part.avatarMesh.GetComponentInChildren<SkinnedMeshRenderer>();
+                if (smr != null)
                 {
-                    renderer.enabled = isShowingAnatomy;
+                    if (!isShowingAnatomy)
+                    {
+                        // Swap all materials to anatomyMaterial
+                        Material[] anatomyMats = new Material[smr.materials.Length];
+                        for (int i = 0; i < anatomyMats.Length; i++)
+                        {
+                            anatomyMats[i] = anatomyMaterial;
+                        }
+                        smr.materials = anatomyMats;
+                    }
+                    else
+                    {
+                        // Restore original materials
+                        smr.materials = part.originalMaterials;
+                    }
                 }
 
                 return;
@@ -68,7 +94,15 @@ public class BodyPartToggle : MonoBehaviour
                     renderer.enabled = false;
                 }
             }
+
+            // Restore avatar materials
+            var smr = part.avatarMesh.GetComponentInChildren<SkinnedMeshRenderer>();
+            if (smr != null && part.originalMaterials != null)
+            {
+                smr.materials = part.originalMaterials;
+            }
         }
+
         Debug.Log("All anatomy meshes hidden!");
     }
 }

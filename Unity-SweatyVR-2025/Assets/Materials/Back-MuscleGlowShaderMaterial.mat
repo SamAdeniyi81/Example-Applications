@@ -119,7 +119,7 @@ Material:
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-    - _EMG_Value: 0.46504027
+    - _EMG_Value: 0.4747286
     - _Emission_Power: 1
     - _EnvironmentReflections: 1
     - _GlossMapScale: 1
@@ -146,7 +146,7 @@ Material:
     - _ZWriteControl: 0
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 1, g: 0.53495973, b: 0.53495973, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Max_Color: {r: 1, g: 0.3258828, b: 0.2688679, a: 0}
     - _Max_Color_1: {r: 1, g: 0.10917858, b: 0, a: 0}

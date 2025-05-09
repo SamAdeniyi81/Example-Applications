@@ -9,6 +9,7 @@ TagManager:
   - StopButton
   - SelectButton
   - PairButton
+  - World Camera
   layers:
   - Default
   - TransparentFX
@@ -20,8 +21,8 @@ TagManager:
   - 
   - PostProcessing
   - Avatar
-  - Muscle Overlay
-  - 
+  - Anatomy
+  - GPTRig
   - 
   - 
   - 
