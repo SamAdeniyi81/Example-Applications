@@ -85,6 +85,7 @@ public class BodyPartToggle : MonoBehaviour
 
     public void HideAllAnatomyMeshes()
     {
+
         foreach (var part in bodyParts)
         {
             if (part.anatomyMesh != null)
